@@ -5,13 +5,19 @@ import {
   Button,
 } from 'react-native'
 
-export default function Login({navigation}) {
+export default function Login(props) {
+  let { navigation } = props;
+
+  let toHome = () => {
+    navigation.navigate("Home");
+  }
+
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <Text>{"Login"}</Text>
       <Button
         title="Go to Home"
-        onPress={() => navigation.navigate("Home")}
+        onPress={toHome}
       />
     </View>
   );
