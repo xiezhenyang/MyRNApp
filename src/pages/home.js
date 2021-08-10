@@ -14,7 +14,9 @@ const Tab = createBottomTabNavigator();
 
 export default function Home() {
   let props = {
+    tabBarPosition: "bottom",
     initialRouteName: "HomeTab",
+    headerMode: "screen",
   }
 
   let screenOptions = ({ route, navigation }) => ({
