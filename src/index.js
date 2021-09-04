@@ -7,6 +7,9 @@ import {
 
 import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
+import { TransitionSpecs } from '@react-navigation/stack'
+
+import app from './App'
 
 import Home from './pages/home'
 import Auth from './pages/auth'

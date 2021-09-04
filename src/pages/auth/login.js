@@ -4,11 +4,13 @@ import {
   Text,
   Button,
 } from 'react-native'
+import app from '../../App';
 
 export default function Login(props) {
   let { navigation } = props;
 
   let toHome = () => {
+    app.emit("showsucc", "hahaha"); //此处发送事件时已经取消监听
     navigation.navigate("Home");
   }
 
